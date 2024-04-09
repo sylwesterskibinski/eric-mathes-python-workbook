@@ -40,3 +40,19 @@ print(list(i**3 for i in range(3,31)))
 
 # Create list of 10 first numbers to the power of 3
 print(list(i**3 for i in range(1,11)))
+
+pizzas.append("Havaiian")
+pizzas.append("Funghi")
+
+# Print first 3 and last 3 elements of list
+print(f"First 3 elements of pizzas are {pizzas[0:3]}")
+print(f"Last 3 elements of pizzas are {pizzas[-4:-1]}")
+
+# Copy list and add new element to the list and their copy. Check if lists differ.
+friend_pizzas = pizzas[:]
+
+friend_pizzas.append("Copy Pizza")
+pizzas.append("Original Pizza")
+
+print(friend_pizzas)
+print(pizzas)
